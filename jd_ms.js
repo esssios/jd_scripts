@@ -23,7 +23,7 @@ cron "30 8 * * *" script-path=jd_ms.js, tag=秒秒币
  */
 const $ = new Env('秒秒币-LingFeng自用版');
 
-const notify = $.isNode() ? require('./sendNotify') : '';
+const notify = $.isNode() ? require('../sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 var timestamp = Math.round(new Date().getTime()).toString();

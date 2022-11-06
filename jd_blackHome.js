@@ -3,7 +3,7 @@
  *cron "1 1 1 1 1" jd_blackHome.js
  */
 const $ = new Env('黑号检测');
-const notify = $.isNode() ? require('./sendNotify') : '';
+const notify = $.isNode() ? require('../sendNotify') : '';
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 
 

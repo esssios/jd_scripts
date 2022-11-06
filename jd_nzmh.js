@@ -22,7 +22,7 @@ cron "35 1,23 * * *" script-path=jd_nzmh.js,tag=女装盲盒
  */
 
 const $ = new Env('女装盲盒抽京豆');
-const notify = $.isNode() ? require('./sendNotify') : '';
+const notify = $.isNode() ? require('../sendNotify') : '';
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let cookiesArr = [], cookie = '', message;
 

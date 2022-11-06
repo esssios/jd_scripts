@@ -1338,7 +1338,7 @@ function timeFormat(time) {
 function requireConfig() {
   return new Promise(resolve => {
     console.log('开始获取配置文件\n')
-    notify = $.isNode() ? require('./sendNotify') : '';
+    notify = $.isNode() ? require('../sendNotify') : '';
     const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
     //IOS等用户直接用NobyDa的jd cookie
     if ($.isNode()) {
